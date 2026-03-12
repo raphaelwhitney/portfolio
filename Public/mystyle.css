@@ -1,0 +1,1780 @@
+body {
+   background-color: #ffffff;
+   height: 100%; 
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0;
+  margin: 0;  
+  color: #475569;
+  font-size: 1rem; 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/*Mobile First 320px*/
+
+/*all sections left/right spacing*/
+.nav, .grid-row, .about-me, .skill-cont, .project-card, .serv-grid, .contact-me-sect { 
+    padding: 0 1rem 0 1rem;  
+}
+
+/*nav styling*/
+
+a {
+   text-decoration: none;
+    color: #2563EB;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: #1D386E;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.938rem;  
+    border-radius: 0.3rem;
+    display: block;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.aText:hover { 
+    background-color: #466139;
+    color: white;
+    transition: 3s ease-out; 
+    padding: 1rem; 
+}
+
+.btn:hover {
+    background-color: #614539;
+    color: white;
+    transition: 3s ease-out;
+}
+
+
+/* Navigations Ends here..*/
+
+/* Hero*/ 
+
+.hero { 
+    background: linear-gradient(-70deg/*-45deg*/, #4E6246, #7BE151, #e9f5ff, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: auto; 
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; 
+    height: inherit;
+    position: relative;
+    gap: 1rem;
+    padding-bottom: 0.5rem; 
+} 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+h1 {
+    color: #09148F;
+    margin-bottom: 1.25rem;
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 2rem;  
+    font-size: 2.4rem; 
+}
+
+.img-hero {
+    display:none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    padding: 0;
+    position: static;
+}
+ 
+.img-hero2 {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    padding: 0;
+    position: static;
+}
+.img-hero2>div>img {
+    max-width: 100%;  
+    display: block;
+    padding: 0;  
+    position: relative;
+    bottom: 0; 
+    top: 1rem;          
+}
+
+.hero-text > hr {
+    width: 13rem;      
+}
+
+.fs>b {
+    color: #1D386E;
+}
+.fs {
+    margin-bottom: 0.3rem;
+}
+
+.btn-hero {       
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;   
+}
+
+.hero-text>.btn-hero {
+    display: none;      
+}
+
+.btn.contact, .btn.code, .btn.apidoc {
+    background-color: inherit; 
+    color: #1D386E;
+    border: 0.063rem solid #1D386E;
+}
+
+
+.btncontact:hover {
+    background-color: white;
+    color: #1D386E;  
+}
+
+.connect {
+    color: #1D386E;
+    font-weight: bold;
+}
+/* Hero Ends Here*/
+
+/*About me section*/
+
+.about {
+    margin-top: 1rem;  
+    margin-bottom: 1rem; 
+    display: flex;
+    
+}
+
+h2 {
+    color: #09148F; 
+    margin-bottom: 0;
+}
+.about-text {
+    text-align: justify;
+}
+
+/*About Ends here*/
+
+/*Skills Section*/
+
+.grids {
+    background-color: #eef2f5;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    display: grid;
+}
+.grid-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grid-column ul {
+    padding: 0 1.125rem 0 1.125rem;
+}
+
+.grid-column li {
+    padding-left: 0;
+    line-height: 1.5rem; 
+}
+
+.frontend, .backend, .database, .cms {
+    flex: 1;
+    background-color: white;
+    padding: 1.25rem;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    color: #09148F;
+}
+
+/*Skills Section Ends Here*/
+
+/*Projects Section*/
+
+.project {
+    background-color: white;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; 
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 3rem;
+    position: relative;
+    margin-bottom: 1.5rem; 
+}
+
+.pro-1, .pro-2, .pro-3 {
+    box-shadow: -0.313rem 0.313rem #e2e8f080;
+    position: relative;
+}
+
+.img-project {
+    width: 100%;
+}
+
+.pro-content {
+     padding: 1.25rem;
+}
+
+.pro-content p>b {
+    color: #1D386E;
+}
+
+.p-btn {
+    display: flex;
+    position: relative;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Projects Section Ends Here*/
+
+/* Services*/
+
+.services {
+    background-color: #eef2f5;
+    padding-top: 1.25rem;
+    padding-bottom: 2rem;
+}
+
+.serv-grid-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 3rem; 
+    padding: 0;
+
+}
+
+.serv-row {
+    background-color: #FFFFFF;
+}
+
+.serv-head {
+    background-color: #1D386E;
+    text-align: center;
+    padding: 0.5rem;  
+}
+
+.serv-head>h3 {
+    color: white;
+}
+
+.service-grid>ul {
+    padding: 0;
+}
+
+.service-grid {
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.service-grid li { 
+    margin: 0;
+    padding: 0;
+}
+
+.service-grid>.svg {
+    width: 4rem;
+}
+/* Services Ends Here*/
+
+
+/*contact me*/
+
+.contact-me-sect {
+    background-color: #1D386E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-me {
+    color: white;
+    text-align: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    width: inherit;
+}
+
+.contact-me>h2 {
+    color: white;
+}
+
+.cont-info {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem;  
+
+}
+
+.contact-svg {
+    width: 1.5rem; 
+}
+
+.contact-me>hr {
+    width: 10rem;
+}
+
+.upArrow svg {
+    width: 2rem;
+}
+.upArrow {
+    position: fixed;
+    right: 1rem;
+    top: 35rem;
+    display: block;
+    cursor: pointer;
+}
+
+/*contact me ends here*/
+
+/*footer*/
+footer {
+    background-color: #09148F;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0.75rem;
+}
+
+.footer {
+    padding: 0.625rem; 
+    text-align: center;
+    color: white;
+}
+
+.footer p{
+    padding: 0.3rem;
+    margin: 0;
+}
+
+.react {
+    display: none;
+}
+
+
+/*footer Ends Here*/
+
+
+
+/*=====================================================*/
+/*RESPONSIVE DESIGN BREAK-POINTS*/
+/*=====================================================*/
+
+
+
+ /*(Mobile Medium Screens up)*/
+
+ 
+
+@media (min-width: 375px) {
+
+    h1 {  
+    font-size: 3rem;
+}
+
+.hero-text hr {
+    width: 8rem;
+}
+/*Projects Section*/
+
+.pro-content {
+     text-align: justify;
+}
+
+/*Projects Section Ends Here*/
+
+}
+
+
+
+/*===================
+(Iphone 11/Pro/ProMax)
+=====================*/
+
+@media (min-width: 414px){ 
+/* Hero*/ 
+
+h1 {
+    font-size: 3.3rem;
+}
+}
+
+
+/*===================
+(Mobile Large Up)
+=====================*/
+
+@media (min-width: 425px){ 
+/* Hero*/ 
+
+h1 {
+    font-size: 3.4rem;
+}
+}
+
+
+
+ /*==================
+ (Tablets Screen Up)
+ ====================*/
+
+ @media (min-width:768px){ 
+    
+/*all sections left/right spacing*/
+.nav, .grid-row, .about-me, .skill-cont, .project-card, .serv-grid, .contact-me {
+    padding: 0 2rem 0 2rem;  
+}
+/* Hero*/ 
+
+.hero { 
+	height: auto;
+}
+
+.hero-text {
+    align-items: normal;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+h1 {  
+    font-size: 3.8rem;   
+}
+
+.hero-text > hr {
+    width: 30rem;      
+}
+
+.btn-hero {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1.1rem;   
+}
+
+.btn-hero > a {
+    flex: 1;
+    margin: 0;
+}
+
+/* Hero Ends Here*/
+/*About me section*/
+h2 {
+    font-size: 1.625rem; 
+}
+
+
+/*About Ends here*/
+
+/*Skills Section*/
+
+.grid-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid-column ul {
+    padding: 0 1.125rem 0 1.125rem;
+}
+
+.frontend, .backend, .database, .cms {
+     flex-basis: 9rem;
+}
+
+h3 {
+    font-size: 1.188rem; 
+}
+
+/*Skills Section Ends Here*/
+
+/*Projects Section*/
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+}
+
+.pro-1 {
+    grid-column: span 2;
+}
+
+.pro-2, .pro-3, .pro-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-2>.pro-content, .pro-3>.pro-content {
+    text-align: left;
+}
+
+#pro1Btn {
+    justify-content: left;
+}
+
+#pro1Btn > .btn {
+    flex: 1;
+}
+/*Projects Section Ends Here*/
+
+/* Services*/
+
+
+.serv-grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.serv-row {
+    flex-basis: 48.2%; 
+}
+
+/* Services Ends Here*/
+
+
+/*contact me*/
+
+
+
+.contact-me {
+    
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.contact-svg {
+    width: 1.6rem;  
+}
+
+.contact-me>hr {
+    width: 14rem;
+}
+
+.upArrow {
+    right: 2rem;
+}
+/*contact me ends here*/
+
+ }
+
+ /*======================================================
+ (Tablets Landscape / Mini Laptop Screen Up)
+ =======================================================*/
+
+ @media (min-width:1024px){ 
+
+/*all sections left/right spacing*/
+.nav, .grid-row, .about-me, .skill-cont, .project-card, .serv-grid, .contact-me-sect { 
+    padding: 0 1.6rem 0 1.6rem;     
+}
+
+    /* Navigation */
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto; 
+    position: fixed;
+    width: 100%;
+    background-color: aliceblue; 
+    z-index: 1000;
+    top: 0;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+#nav-left {
+    justify-content: space-around;
+    grid-column: span 3;
+    text-transform: uppercase;
+}
+#nav-right {
+    justify-content: flex-end;
+}
+.btn.whatsapp {
+    width: 10rem; 
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+/* Nav End */
+
+/* Hero*/ 
+
+.hero { 
+	min-height: 50vh;    
+}
+
+.hero2 {
+    display: none;
+}
+
+.grid-row {
+    display: flex;
+    position: relative; 
+    height: auto;
+} 
+.hero-text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;   
+}
+
+h1 { 
+    font-size: 2.6rem;  
+}
+
+h3 {
+    font-size: 1.1rem; 
+}
+.img-hero {
+    display: block;
+    position: relative; 
+    flex: 1;
+    background-image: url("/Assets/Images/hero.webp");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.img-hero img {
+    /* width: 100%;
+    margin-top: 2.8rem;  
+    max-height: auto;  */
+    display: none;
+}
+
+.hero-text > hr {
+    width: 30rem;      
+}
+
+.hero-text>.btn-hero {
+    display: flex;       
+}
+
+/* Hero Ends Here*/
+
+/*About me section*/
+
+.about {
+    margin-top: 2rem;  
+    margin-bottom: 4rem; 
+}
+
+.about-text {
+    text-align: center;
+}
+
+/*About Ends here*/
+
+/*Skills Section*/
+
+.frontend, .backend, .database, .cms {
+     flex-basis: 1; 
+}
+
+
+
+.grids {
+    padding-bottom: 4rem; 
+    padding-top: 2rem;
+}
+/*Skills Section Ends Here*/
+
+/*Projects Section*/
+
+.project {
+    padding-bottom: 4rem;
+    padding-top: 2rem;  
+}
+.project-grid {
+    display: flex;
+    margin-bottom: 1.5rem; 
+}
+
+.p-btn .btn {
+    flex: 1; 
+}
+/*Projects Section Ends Here*/
+
+/* Services*/
+
+.services {
+    padding-top: 2em;
+    padding-bottom: 4rem;   
+}
+
+.serv-grid-row {
+    display: flex;
+}
+
+.serv-row {
+    flex: 1;
+}
+
+.service-grid li { 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Services Ends Here*/
+
+
+/*contact me*/
+
+
+.contact-me {
+    padding-bottom: 2rem; 
+}
+
+.contact-svg {
+    width: 1.5rem; 
+}
+
+.contact-me>hr {
+    width: 13rem; 
+}
+
+.upArrow svg {
+    width: 2.5rem; 
+}
+
+/*contact me ends here*/
+
+
+ }
+
+
+/*footer*/
+footer p{
+    font-size: 1rem;    
+}
+
+ /*======================================================
+ (Laptop Screen Up)
+ =======================================================*/
+
+ @media (min-width:1147px){ 
+
+/* Hero*/ 
+
+
+
+.hero-text {
+    margin: 2rem 0 1rem 0; 
+}
+
+h1 { 
+    font-size: 3rem; 
+}
+
+ }
+
+
+ /*======================================================
+ (Laptop Screen Up)
+ =======================================================*/
+
+ @media (min-width:1280px){ 
+
+/* Hero*/ 
+
+.hero-text {
+    margin: 3rem 0 2rem 0; 
+}
+
+h1 { 
+    font-size: 3.3rem; 
+}
+
+ }
+
+
+ /*======================================================
+ (Laptop Large Screen Up)
+ =======================================================*/
+
+ @media (min-width:1440px){ 
+
+
+ /*all sections left/right spacing*/
+.nav, .grid-row, .about-me, .skill-cont, .project-card, .serv-grid, .contact-me-sect { 
+    padding: 0 1.8rem 0 1.8rem;      
+}
+
+/*nav styling*/
+.btn.whatsapp {
+    width: 12rem; 
+}
+
+/* Navigations Ends here..*/
+
+/* Hero*/ 
+
+.hero { 
+	min-height: 60vh;  
+    display: grid;    
+}
+
+
+.hero-text {
+    padding-top: 4rem;
+    padding-bottom: 4rem;    
+}
+
+h1 { 
+    font-size: 3.7rem;      
+}
+
+h3 {
+    font-size: 1.1rem; 
+}
+.img-hero {
+    padding-top: 36rem;       
+}
+
+.img-hero img {
+    /* width: 100%;
+    margin-top: 2.8rem;  
+    max-height: auto;  */
+    display: none;
+}
+
+.hero-text > hr {
+    width: 30rem;      
+}
+
+.hero-text>.btn-hero {
+    display: flex;       
+}
+
+
+/* Hero Ends Here*/
+
+/*About me section*/
+
+.about {
+    margin-top: 4rem;  
+    margin-bottom: 4rem; 
+}
+
+.about-text {
+    text-align: center;
+}
+
+/*About Ends here*/
+
+/*Skills Section*/
+
+.frontend, .backend, .database, .cms {
+     flex-basis: 1; 
+}
+
+
+
+.grids {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+/*Skills Section Ends Here*/
+
+/*Projects Section*/
+
+.project {
+    padding-bottom: 4rem;
+    padding-top: 4rem;  
+}
+.project-grid {
+    display: flex;
+    margin-bottom: 1.5rem; 
+}
+
+.p-btn .btn {
+    flex: 1; 
+}
+/*Projects Section Ends Here*/
+
+/* Services*/
+
+.services {
+    padding-top: 4rem;
+    padding-bottom: 4rem;   
+}
+
+.serv-grid-row {
+    display: flex;
+}
+
+.serv-row {
+    flex: 1;
+}
+
+.service-grid li { 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Services Ends Here*/
+
+
+/*contact me*/
+
+
+.contact-me {
+    padding-bottom: 2rem; 
+}
+
+.contact-svg {
+    width: 1.5rem; 
+}
+
+.contact-me>hr {
+    width: 15rem; 
+}
+
+.upArrow svg {
+    width: 3rem;
+}
+
+/*contact me ends here*/
+
+
+ }
+
+
+
+
+ /*======================================================
+ (Laptop)
+ =======================================================*/
+
+ @media (min-width: 1512px){ 
+
+/*nav styling*/
+
+.aText {
+    font-size: 1.4rem;     
+}
+ 
+.btn {
+    
+    font-size: 1.4rem; 
+    padding: 1.4rem;
+}
+
+/* Hero*/ 
+
+ 
+
+.hero-text {
+    margin: 6rem 0 0rem 0;
+}
+
+h1 { 
+    font-size: 4rem;  
+}
+
+p, .fs, li, .grid-column li, .service-grid li {   
+    font-size: 1.4rem;  
+}
+.hero-text > hr {
+    width: 40rem;             
+}
+
+/*About me section*/
+
+h2 {
+    font-size: 2.2rem;    
+}
+.about {
+    margin-bottom: 3rem; 
+    margin-top: 3rem;
+}
+
+/*Skills Section*/
+
+.grid-column li {
+    line-height: 2rem;  
+}
+
+h3 {
+    font-size: 1.8rem;    
+}
+
+.grids {
+    padding-top: 3rem;
+    padding-bottom: 3rem;   
+}
+
+
+
+
+ }
+ 
+ 
+ 
+ /*======================================================
+ (Laptop)
+ =======================================================*/
+
+ @media (min-width: 1800px){ 
+
+/*nav styling*/
+
+.aText {
+    font-size: 1.6rem;     
+}
+ 
+.btn {
+    
+    font-size: 1.6rem; 
+}
+
+/* Hero*/ 
+
+ 
+
+.hero-text {
+    margin: 6rem 0 4rem 0;      
+}
+
+h1 { 
+    font-size: 4.6rem;  
+}
+
+p, .fs, li, .grid-column li, .service-grid li {   
+    font-size: 1.6rem;  
+}
+.hero-text > hr {
+    width: 45rem;             
+}
+
+/*About me section*/
+
+h2 {
+    font-size: 2.5rem;    
+}
+
+/*Skills Section*/
+
+.grid-column li {
+    line-height: 3rem;  
+}
+
+h3 {
+    font-size: 2rem;    
+}
+
+.grids {
+    padding-top: 3rem;
+    padding-bottom: 3rem;   
+}
+
+
+/*footer*/
+footer p{
+    font-size: 1.2rem;    
+}
+
+
+/* Services*/
+
+
+.service-grid>.svg {
+    width: 5rem;   
+}
+
+
+/* Services Ends Here*/
+
+
+/*contact me*/
+
+
+.contact-svg {
+    width: 2.5rem;  
+}
+
+.contact-me>hr {
+    width: 20rem;    
+}
+
+.upArrow svg {
+    width: 4rem; 
+    margin-top: 20rem;        
+}
+
+/*contact me ends here*/
+
+ }
+ 
+ 
+ /*======================================================
+ (Laptop)
+ =======================================================*/
+
+ @media (min-width: 1920px){ 
+
+
+/* Hero*/ 
+
+ 
+
+.hero-text {
+    margin: 7rem 0 4rem 0;      
+}
+
+h1 { 
+    font-size: 5.3rem;  
+}
+
+p, .fs, li, .grid-column li, .service-grid li {   
+    font-size: 1.7rem;  
+}
+.hero-text > hr {
+    width: 48rem;             
+}
+
+/*About me section*/
+
+h2 {
+    font-size: 2.7rem;    
+}
+
+/*Skills Section*/
+
+h3 {
+    font-size: 2.1rem;    
+}
+
+
+ }
+ 
+
+ /*======================================================
+ (Laptop)
+ =======================================================*/
+
+ @media (min-width: 2048px){ 
+
+
+/* Hero*/ 
+.aText {
+    font-size: 1.9rem;     
+}
+ .btn.whatsapp {
+    width: 100%;  
+}
+.btn {
+    
+    font-size: 1.9rem; 
+}
+.hero-text {
+    margin: 9rem 0 6rem 0;      
+}
+
+h1 { 
+    font-size: 5.6rem;  
+}
+
+p, .fs, li, .grid-column li, .service-grid li {   
+    font-size: 1.9rem;  
+}
+.hero-text > hr {
+    width: 53rem;             
+}
+
+/*About me section*/
+
+h2 {
+    font-size: 2.9rem;    
+}
+
+/*Skills Section*/
+
+h3 {
+    font-size: 2.1rem;    
+}
+
+footer p{
+    font-size: 1.5rem;  
+}
+
+
+/* Services*/
+
+
+.service-grid>.svg {
+    width: 6rem; 
+}
+/* Services Ends Here*/
+/*contact me*/
+
+
+.upArrow svg {
+    margin-top: 30rem;      
+}
+
+/*contact me ends here*/
+
+
+
+ }
+ 
+ /*======================================================
+ (Laptop)
+ =======================================================*/
+
+ @media (min-width: 2294px){ 
+
+.btn {
+    padding: 2rem;
+}
+/* Hero*/ 
+
+.hero-text {
+    margin: 10rem 0 9rem 0;      
+}
+
+h1 { 
+    font-size: 6rem;  
+}
+
+
+
+/*About me section*/
+
+h2 {
+    font-size: 3.2rem;    
+}
+
+/*Skills Section*/
+
+h3 {
+    font-size: 2.4rem;    
+}
+
+.upArrow svg {
+    margin-top: 38rem;      
+}
+
+/*contact me ends here*/
+
+
+
+ }
+ /*======================================================
+ (2k Screen Up)
+ =======================================================*/
+
+ @media (min-width:2560px){ 
+
+
+ /*all sections left/right spacing*/
+.nav, .grid-row, .about-me, .skill-cont, .project-card, .serv-grid, .contact-me-sect { 
+    padding: 0 10rem 0 10rem;      
+}
+
+/*nav styling*/
+
+.aText {
+    font-size: 2rem;     
+}
+ 
+.btn {
+    
+    font-size: 2rem; 
+    padding: 2rem;
+}
+
+.btn.whatsapp {
+    width: 100%;  
+}
+
+/* Navigations Ends here..*/
+
+/* Hero*/ 
+
+ 
+
+.hero-text {
+    margin: 12rem 0 4rem 0;      
+}
+
+h1 { 
+    font-size: 6.2rem;  
+}
+
+p, .fs, li, .grid-column li, .service-grid li {   
+    font-size: 2.1rem;  
+}
+.hero-text > hr {
+    width: 58rem;             
+}
+
+/* Hero Ends Here*/
+
+/*About me section*/
+
+h2 {
+    font-size: 3.5rem;    
+}
+.about {
+    margin-bottom: 5rem; 
+    margin-top: 5rem;
+}
+
+/*About Ends here*/
+
+/*Skills Section*/
+
+.grid-column li {
+    line-height: 4rem;  
+}
+
+h3 {
+    font-size: 2.5rem;    
+}
+
+.grids {
+    padding-top: 5rem;
+    padding-bottom: 5rem;   
+}
+
+.frontend, .backend, .database, .cms {
+    padding: 3rem 0 3rem 3rem;
+}
+/*Skills Section Ends Here*/
+
+/*Projects Section*/
+
+.project {
+    padding-bottom: 5rem;
+    padding-top: 5rem;  
+}
+.project-grid {
+    margin-bottom: 2rem; 
+}
+
+/*Projects Section Ends Here*/
+
+/* Services*/
+
+.service-grid li { 
+    margin: 0 0 5rem 3rem; 
+}
+
+.service-grid>.svg {
+    width: 8rem; 
+    margin: 4rem 0 0 3rem;    
+}
+
+.serv-grid {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+/* Services Ends Here*/
+
+
+/*contact me*/
+
+
+.contact-me {
+    padding-bottom: 4rem;   
+}
+
+.contact-svg {
+    width: 3rem; 
+}
+
+.contact-me>hr {
+    width: 30rem; 
+}
+
+.upArrow svg {
+    width: 5rem;
+    margin-top: 30rem;      
+}
+
+/*contact me ends here*/
+
+/*footer*/
+footer p{
+    font-size: 1.7rem;   
+}
+
+.footer {
+    padding: 1rem;
+}
+
+/*footer Ends Here*/
+
+ }
+
+
+ /*======================================================
+ (2k Screen Up)
+ =======================================================*/
+
+ @media (min-width: 2704px){ 
+
+.hero-text {
+    margin: 14rem 0 10rem 0;      
+}
+
+h1 { 
+    font-size: 6.8rem;    
+}
+
+.contact-me>hr {
+    width: 24rem;   
+}
+
+.upArrow svg {
+    width: 6rem; 
+    margin-top: 50rem;       
+}
+
+ }
+ /*======================================================
+ (3k Screen Up)
+ =======================================================*/
+
+ @media (min-width:3024px){ 
+
+/*nav styling*/
+
+
+.aText {
+    font-size: 2.7rem;      
+}
+
+
+.btn {  
+    padding: 2.2rem;  
+}
+
+
+
+/* Navigations Ends here..*/
+
+/* Hero*/ 
+
+.hero-text {
+    margin: 15rem 0 8rem 0;       
+}
+
+h1 { 
+    font-size: 7.6rem;    
+}
+
+
+p, .fs, li, .grid-column li, .service-grid li, .btn {   
+    font-size: 3rem;     
+}
+.hero-text > hr {
+    width: 82rem;           
+}
+
+/* Hero Ends Here*/
+
+/*About me section*/
+
+h2 {
+    font-size: 4.5rem;      
+}
+
+/*About Ends here*/
+
+/*Skills Section*/
+
+.grid-column li {
+    line-height: 5rem;    
+}
+
+
+
+h3 {
+    font-size: 3.3rem;
+}
+
+
+/*Skills Section Ends Here*/
+
+/*contact me*/
+
+
+
+.contact-svg {
+    width: 4rem;  
+}
+
+.contact-me>hr {
+    width: 35rem;    
+}
+
+.upArrow svg {
+    margin-top: 60rem;       
+}
+
+/*contact me ends here*/
+/*footer*/
+footer p{
+    font-size: 2.2rem;    
+}
+
+.footer {
+    padding: 2rem;
+}
+
+ }
+
+
+
+ /*======================================================
+ (4k Screen Up)
+ =======================================================*/
+
+ @media (min-width:3840px){ 
+
+
+
+/*nav styling*/
+
+
+.aText {
+    font-size: 3rem;      
+}
+
+.nav-menu {
+    gap: 7rem;     
+}
+
+.nav-menu>a {
+    padding: 4rem 0 4rem 0;  
+}
+
+.btn {  
+    padding: 2.5rem;  
+}
+
+/* Navigations Ends here..*/
+
+/* Hero*/ 
+
+.hero-text {
+    margin: 15rem 0 8rem 0;       
+}
+
+h1 { 
+    font-size: 10rem;    
+}
+
+.img-hero img {
+    width: 100rem;    
+    margin-top: 4.4rem;         
+}
+
+p, .fs, li, .grid-column li, .service-grid li, .btn {   
+    font-size: 4.1rem;     
+}
+.hero-text > hr {
+    width: 10rem;            
+}
+
+/* Hero Ends Here*/
+
+/*About me section*/
+
+h2 {
+    font-size: 5.5rem;     
+}
+.about {
+    margin-bottom: 5rem; 
+    margin-top: 5rem;   
+}
+
+/*About Ends here*/
+
+/*Skills Section*/
+
+.grid-column li {
+    line-height: 7rem;    
+}
+
+.grid-column ul {
+    padding: 3rem 0 3rem 5rem;      
+}
+
+h3 {
+    font-size: 4.5rem;
+}
+.grids {
+    padding-bottom: 7rem; 
+    padding-top: 7rem;
+}
+
+.grid-column {
+    margin-top: 5rem; 
+    
+}
+
+.frontend, .backend, .database, .cms {
+    padding: 3rem 0 3rem 3rem;
+}
+/*Skills Section Ends Here*/
+
+/*Projects Section*/
+
+.project {
+    padding-bottom: 7rem; 
+    padding-top: 10rem;     
+}
+.project-grid {
+    margin-bottom: 2rem; 
+    gap: 1rem; 
+}
+
+.pro-1, .pro-2, .pro-3 {
+    padding: 2rem; 
+    flex: 1;
+
+}
+/*Projects Section Ends Here*/
+
+/* Services*/
+
+
+.service-grid ul {
+    padding-left: 4rem;
+}
+
+.service-grid>.svg {
+    width: 10rem;  
+    padding-left: 4rem;  
+}
+
+.services {
+    padding-top: 7rem;
+    padding-bottom: 10rem;   
+}
+/* Services Ends Here*/
+
+
+/*contact me*/
+
+
+.contact-me {
+    padding-bottom: 7rem;
+    padding-top: 7rem;    
+}
+
+.contact-svg {
+    width: 5rem;  
+}
+
+.contact-me>hr {
+    width: 40rem;   
+}
+
+.upArrow svg {
+    width: 7rem; 
+    margin-top: 50rem;       
+}
+
+/*contact me ends here*/
+
+
+ }
+
+ /*======================================================
+ (4k DCI Screen Up)
+ =======================================================*/
+
+ @media (min-width: 4096px){ 
+
+    .hero-text {
+    padding: 0;
+    margin: 24rem 0 15rem 0;   
+}
+
+.hero-text > hr {
+    width: 115rem;         
+}
+ }
+
+ /* ========================================================= */

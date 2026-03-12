@@ -702,7 +702,7 @@ h3 {
     display: block;
     position: relative; 
     flex: 1;
-    background-image: url("/Assets/Images/og-image.png"); /*Assets/Images/hero.webp*/
+    background-image: url("/Assets/Images/hero.webp"); /*Assets/Images/hero.webp*/
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: bottom;
@@ -1779,4 +1779,5 @@ h3 {
 
 
  /* ========================================================= */
+
 
